@@ -210,3 +210,6 @@ __marimo__/
 postgres_data/
 .DS_Store
 .mage_data/
+mage_data/       <-- Add this line
+__pycache__/
+*.pyc
