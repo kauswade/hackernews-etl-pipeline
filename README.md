@@ -31,7 +31,7 @@ It is fully containerized using Docker and orchestrated with Mage.ai, ensuring t
     * Aggregate counts per keyword.
 3. **Load:** Append results to the "tech_trends_daily" table in Postgres.
 
-![Pipeline Flow](assets\pipeline_flow.png)
+![Pipeline Flow](assets/pipeline_flow.png)
 
 ---
 
