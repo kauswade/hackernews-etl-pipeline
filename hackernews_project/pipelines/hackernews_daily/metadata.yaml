@@ -10,7 +10,7 @@ blocks:
   language: python
   name: load_data
   retry_config: null
-  status: executed
+  status: updated
   timeout: null
   type: data_loader
   upstream_blocks: []
@@ -48,6 +48,21 @@ blocks:
   upstream_blocks:
   - transform_data
   uuid: save_to_db
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: exciting lake
+  retry_config: null
+  status: updated
+  timeout: null
+  type: scratchpad
+  upstream_blocks: []
+  uuid: exciting_lake
 cache_block_output_in_memory: false
 callbacks: []
 concurrency_config: {}
