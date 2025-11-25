@@ -18,7 +18,8 @@ blocks:
 - all_upstream_blocks_executed: true
   color: null
   configuration: {}
-  downstream_blocks: []
+  downstream_blocks:
+  - save_to_db
   executor_config: null
   executor_type: local_python
   has_callback: false
@@ -31,6 +32,22 @@ blocks:
   upstream_blocks:
   - load_data
   uuid: transform_data
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: save_to_db
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - transform_data
+  uuid: save_to_db
 cache_block_output_in_memory: false
 callbacks: []
 concurrency_config: {}
